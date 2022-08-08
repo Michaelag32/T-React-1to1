@@ -1,0 +1,22 @@
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    border-radius: 4px;
+    background: #6415ff;
+    color: #fff;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+}
