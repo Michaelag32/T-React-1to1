@@ -12,6 +12,14 @@
     border: 0 solid #e5e7eb;;
 }
 
+.app {
+    min-height: 100vh;
+    --tw-text-opacity: 1;
+    color: rgba(36,62,99,var(--tw-text-opacity));
+    padding: 2rem;
+    overflow: hidden;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -176,13 +184,26 @@ button:hover {
 
 .ThreeColWithSideImg__conatiner {
     position: relative;
+    padding:80px 0;
 }
 
 .ThreeColWithSideImg__ThreeColContainer {
     /*width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;*/
+    display: flex;
+    display: flex;
+    flex-flow: column wrap;
+    -webkit-box-align: center;
+    align-items: center;
+   
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+   
+    padding-top: 5rem;
+    padding-bottom: 5rem;*/
+
     display: flex;
     flex-flow: column wrap;
     -webkit-box-align: center;
@@ -194,6 +215,7 @@ button:hover {
     padding-bottom: 5rem;
 }
 
+
 .ThreeColWithSideImg__Subheading{
     text-align: center;
     font-size: 16px;
@@ -204,16 +226,31 @@ button:hover {
 }
 
 .ThreeColWithSideImg__Heading {
+    font-weight: 900;
+    letter-spacing: 0.025em;
     text-align: center;
-    font-size: 48px
+    font-size: 48px;
 }
 
 .ThreeColWithSideImg__Description {
-    width: 100%;
+    /*width: 100%;
     text-align: center;
     margin-top: 1rem;
     font-weight: 500;
+    line-height: 1.625;*/
+
+    width: 100%;
+    text-align: center;
+
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgba(124,139,161,var(--tw-text-opacity));
+    max-width: 36rem;
+
+
 }
 
 .ThreeColWithSideImg__VerticalSpacer {
@@ -221,22 +258,35 @@ button:hover {
     width: 100%;
 }
 
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .ThreeColWithSideImg__Column {
+    display: flex;
+    width: calc(100%/3);
     max-width: 24rem;
 }
 
 .ThreeColWithSideImg__Card {
     display: flex;
-    flex-direction: column;
+    
     -webkit-box-align: center;
     align-items: center;
-    text-align: center;
+    
     height: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem 0.5rem;
 }
+
+.description {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
 .ThreeColWithSideImg__Card .description {
     margin-top: 0.25rem;
     font-weight: 500;
@@ -249,6 +299,11 @@ button:hover {
     margin-top: 1rem;
 }
 
+.textcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
 .ThreeColWithSideImg__Card .imagecontainer {
     border-width: 1px;
     text-align: center;
@@ -257,5 +312,68 @@ button:hover {
     flex-shrink: 0;
 }
 
+.imagecontainer {
+    display: flex;
+}
+
+.ThreeColWithSideImg__Card .title {
+    margin-top: 1rem;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
 /*QUALITY WORK*/
 
+.container {
+    padding: 24px 0 24px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left__quality {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right__quality {
+    height: 100vh;
+}
+
+.quality__img--wrapper {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.headerone__quality {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgba(100,21,255,var(--tw-text-opacity));
+    font-size: 16px;
+}
+
+.headertwo__quality {
+    margin-top: 1rem;
+    font-weight: 900;
+    font-size: 1.875rem;
+    line-height: 1.25;
+    font-size: 48px;
+}
+
+.para__quality {
+    margin-top: 1rem;
+
+    font-weight: 500;
+    line-height: 1.625;
+    --tw-text-opacity: 1;
+    color: rgba(124,139,161,var(--tw-text-opacity));
+}
